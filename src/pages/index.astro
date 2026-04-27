@@ -1,0 +1,566 @@
+---
+import '../styles/site.css';
+const business = "PASS WITH DARREN";
+const phone = "+447866797412";
+const phoneDisplay = "07866 797412";
+const address = "29 Arderne Cl, Harwich, Essex";
+const facebook = "https://m.facebook.com/PASSDAZ/";
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pass With Darren – Driving Instructor in Harwich, Essex</title>
+  <meta name="description" content="Learn to drive in Harwich with Darren – a friendly, patient DVSA-approved driving instructor. Lessons for all abilities. Call 07866 797412." />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+</head>
+<body>
+
+  <!-- Preview banner -->
+  <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">PASS WITH DARREN</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1975&amp;name=PASS%20WITH%20DARREN" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
+
+  <!-- Navigation -->
+  <header class="bg-[#17350C] text-white sticky top-[41px] z-40 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/D1975" class="flex items-center gap-2">
+        <span class="text-[#4EB127] text-2xl font-bold font-display leading-none">✓</span>
+        <span class="font-display font-bold text-lg text-white leading-tight">Pass With Darren</span>
+      </a>
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <a href="/D1975" class="text-[#4EB127]">Home</a>
+        <a href="/D1975/#lessons" class="hover:text-[#4EB127] transition-colors">Lessons</a>
+        <a href="/D1975/#about" class="hover:text-[#4EB127] transition-colors">About Me</a>
+        <a href="/D1975/#areas" class="hover:text-[#4EB127] transition-colors">Areas Covered</a>
+        <a href="/D1975/#pricing" class="hover:text-[#4EB127] transition-colors">Pricing</a>
+        <a href="/D1975/#contact" class="bg-[#4EB127] text-white px-4 py-1.5 rounded-full hover:bg-[#3E8E1F] transition-colors">Contact</a>
+      </nav>
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+        <span class="block w-6 h-0.5 bg-white transition-all" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all" id="bar2"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all" id="bar3"></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0f2508] px-4 pb-4">
+      <nav class="flex flex-col gap-3 text-sm font-semibold pt-2">
+        <a href="/D1975" class="text-[#4EB127] py-1">Home</a>
+        <a href="/D1975/#lessons" class="text-white hover:text-[#4EB127] py-1">Lessons</a>
+        <a href="/D1975/#about" class="text-white hover:text-[#4EB127] py-1">About Me</a>
+        <a href="/D1975/#areas" class="text-white hover:text-[#4EB127] py-1">Areas Covered</a>
+        <a href="/D1975/#pricing" class="text-white hover:text-[#4EB127] py-1">Pricing</a>
+        <a href="/D1975/#contact" class="text-white hover:text-[#4EB127] py-1">Contact</a>
+        <a href={`tel:${phone}`} class="bg-[#4EB127] text-white px-4 py-2 rounded-full text-center mt-1">{phoneDisplay}</a>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+    btn?.addEventListener('click', () => {
+      menu?.classList.toggle('hidden');
+      bar1?.classList.toggle('rotate-45');
+      bar1?.classList.toggle('translate-y-2');
+      bar2?.classList.toggle('opacity-0');
+      bar3?.classList.toggle('-rotate-45');
+      bar3?.classList.toggle('-translate-y-2');
+    });
+  </script>
+
+  <!-- Hero: solid brand colour, split layout -->
+  <section class="bg-[#17350C] min-h-[85vh] flex items-center relative overflow-hidden">
+    <!-- Subtle background texture via opacity overlay -->
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 70% 50%, #4EB127 0%, transparent 60%);"></div>
+    <div class="relative max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center w-full">
+      <!-- Left: text -->
+      <div>
+        <div class="inline-flex items-center gap-2 bg-[#4EB127]/20 text-[#4EB127] text-sm font-semibold px-3 py-1 rounded-full mb-6">
+          📍 Harwich, Essex
+        </div>
+        <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-display font-extrabold leading-tight mb-4">
+          Pass Your Test<br />With Confidence
+        </h1>
+        <p class="text-[#CAE8BE] text-lg mb-4 leading-relaxed">
+          I'm Darren, your local DVSA-approved driving instructor based in Harwich. Patient, friendly lessons tailored to your pace whether you're a complete beginner or need to brush up your skills.
+        </p>
+        <div class="flex items-center gap-2 mb-8">
+          <span class="bg-[#4EB127] text-white text-xs font-bold px-2.5 py-1 rounded">DVSA APPROVED</span>
+          <span class="text-[#CAE8BE] text-sm">ADI Qualified Instructor</span>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href={`tel:${phone}`} class="bg-[#4EB127] hover:bg-[#3E8E1F] text-white font-bold px-6 py-3 rounded-full text-base transition-colors">
+            📞 Call {phoneDisplay}
+          </a>
+          <a href="/D1975/#lessons" class="border border-[#4EB127] text-[#4EB127] hover:bg-[#4EB127]/10 font-bold px-6 py-3 rounded-full text-base transition-colors">
+            View Lessons
+          </a>
+        </div>
+      </div>
+      <!-- Right: photo -->
+      <div class="relative hidden md:block">
+        <div class="rounded-2xl overflow-hidden shadow-2xl aspect-video">
+          <img
+            src="/D1975/images/img-3212-1920w.jpeg"
+            alt="Driving lesson with Pass With Darren in Harwich"
+            width="1344"
+            height="768"
+            fetchpriority="high"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <!-- Floating badge -->
+        <div class="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg px-4 py-3 flex items-center gap-3">
+          <span class="text-3xl">🎓</span>
+          <div>
+            <p class="font-display font-extrabold text-[#17350C] text-sm leading-none">Local Instructor</p>
+            <p class="text-[#2F6A17] text-xs mt-0.5">Harwich &amp; surrounds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-[#4EB127]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="bg-[#4EB127] py-4">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-white text-sm font-semibold">
+        <div class="flex items-center gap-2"><span>✅</span><span>DVSA Approved ADI</span></div>
+        <div class="flex items-center gap-2"><span>🚗</span><span>Manual &amp; Automatic</span></div>
+        <div class="flex items-center gap-2"><span>📍</span><span>Harwich Based</span></div>
+        <div class="flex items-center gap-2"><span>🕐</span><span>Flexible Lesson Times</span></div>
+        <div class="flex items-center gap-2"><span>🏆</span><span>All Abilities Welcome</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lessons offered -->
+  <section id="lessons" class="py-20 bg-[#F6FBF4]">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <span class="text-[#4EB127] font-bold text-sm uppercase tracking-widest">What I Offer</span>
+        <h2 class="text-3xl md:text-4xl font-display font-extrabold text-[#17350C] mt-2">Driving Lessons for Every Stage</h2>
+        <p class="text-[#2F6A17] mt-3 max-w-xl mx-auto">From your very first lesson to test day, I'll guide you through every step with patience and encouragement.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Beginner lessons -->
+        <div class="bg-white rounded-2xl shadow-sm border border-[#CAE8BE] overflow-hidden hover:shadow-md transition-shadow">
+          <div class="aspect-square overflow-hidden">
+            <img
+              src="/D1975/images/fullsizerender-8528f814-1920w.jpeg"
+              alt="Beginner driving lessons Harwich"
+              width="1572"
+              height="1049"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+            <div class="text-2xl mb-2">🚦</div>
+            <h3 class="font-display font-extrabold text-[#17350C] text-lg mb-1">Beginner Lessons</h3>
+            <p class="text-[#2F6A17] text-sm">Start from scratch with calm, clear instruction. I'll build your confidence from day one.</p>
+          </div>
+        </div>
+        <!-- Refresher lessons -->
+        <div class="bg-white rounded-2xl shadow-sm border border-[#CAE8BE] overflow-hidden hover:shadow-md transition-shadow">
+          <div class="aspect-square overflow-hidden">
+            <img
+              src="/D1975/images/img-3215-1920w.jpeg"
+              alt="Refresher driving lessons Harwich"
+              width="1024"
+              height="290"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+            <div class="text-2xl mb-2">🔄</div>
+            <h3 class="font-display font-extrabold text-[#17350C] text-lg mb-1">Refresher Lessons</h3>
+            <p class="text-[#2F6A17] text-sm">Haven't driven in a while? Get your confidence back with a tailored refresher programme.</p>
+          </div>
+        </div>
+        <!-- Intensive courses -->
+        <div class="bg-white rounded-2xl shadow-sm border border-[#CAE8BE] overflow-hidden hover:shadow-md transition-shadow">
+          <div class="aspect-square overflow-hidden">
+            <img
+              src="/D1975/images/img-3212-1920w.jpeg"
+              alt="Intensive driving courses Harwich"
+              width="1344"
+              height="768"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+            <div class="text-2xl mb-2">⚡</div>
+            <h3 class="font-display font-extrabold text-[#17350C] text-lg mb-1">Intensive Courses</h3>
+            <p class="text-[#2F6A17] text-sm">Need to pass quickly? Intensive and semi-intensive courses available to suit your timeline.</p>
+          </div>
+        </div>
+        <!-- Pass Plus -->
+        <div class="bg-white rounded-2xl shadow-sm border border-[#CAE8BE] overflow-hidden hover:shadow-md transition-shadow">
+          <div class="aspect-square overflow-hidden">
+            <img
+              src="/D1975/images/img-3212-1920w-2.jpeg"
+              alt="Pass Plus advanced driving Harwich"
+              width="1440"
+              height="1065"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+            <div class="text-2xl mb-2">🏅</div>
+            <h3 class="font-display font-extrabold text-[#17350C] text-lg mb-1">Pass Plus</h3>
+            <p class="text-[#2F6A17] text-sm">Completed your test? Pass Plus develops your motorway and all-weather driving skills further.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose me -->
+  <section class="py-20 bg-[#F1F9EE]">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-[#4EB127] font-bold text-sm uppercase tracking-widest">Why Choose Me</span>
+          <h2 class="text-3xl md:text-4xl font-display font-extrabold text-[#17350C] mt-2 mb-6">Learning to Drive Should Feel Good</h2>
+          <div class="space-y-5">
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#4EB127] flex items-center justify-center text-white font-bold">✓</div>
+              <div>
+                <h3 class="font-display font-extrabold text-[#17350C]">Patient &amp; Encouraging</h3>
+                <p class="text-[#2F6A17] text-sm mt-1">I never rush you. Lessons move at your pace so you build genuine skill and real confidence.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#4EB127] flex items-center justify-center text-white font-bold">✓</div>
+              <div>
+                <h3 class="font-display font-extrabold text-[#17350C]">DVSA Approved ADI</h3>
+                <p class="text-[#2F6A17] text-sm mt-1">Fully qualified and registered with the Driver and Vehicle Standards Agency. You're in safe hands.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#4EB127] flex items-center justify-center text-white font-bold">✓</div>
+              <div>
+                <h3 class="font-display font-extrabold text-[#17350C]">Flexible Scheduling</h3>
+                <p class="text-[#2F6A17] text-sm mt-1">Morning, evening, and weekend slots available to fit around work, college, or family commitments.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-[#4EB127] flex items-center justify-center text-white font-bold">✓</div>
+              <div>
+                <h3 class="font-display font-extrabold text-[#17350C]">Local Knowledge</h3>
+                <p class="text-[#2F6A17] text-sm mt-1">I know the Harwich test routes inside out, so you'll be fully prepared for what the examiner expects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-2xl overflow-hidden shadow-xl">
+            <img
+              src="/D1975/images/c0dd73b9-3d5d-42f8-8156-ec5685948e4c-192.jpeg"
+              alt="Driving lesson in progress"
+              width="1440"
+              height="3228"
+              loading="lazy"
+              class="w-full object-cover object-top"
+              style="max-height: 480px;"
+            />
+          </div>
+          <div class="absolute top-4 right-4 bg-[#4EB127] text-white rounded-xl px-4 py-3 shadow-lg">
+            <p class="font-display font-extrabold text-2xl leading-none">ADI</p>
+            <p class="text-xs mt-0.5 font-semibold">Approved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About instructor -->
+  <section id="about" class="py-20 bg-[#17350C]">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Photo -->
+        <div class="flex justify-center">
+          <div class="relative">
+            <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-[#4EB127] shadow-2xl mx-auto">
+              <img
+                src="/D1975/images/67b36659-277c-49f1-a71b-41da83bd088a-192.webp"
+                alt="Darren, driving instructor Harwich"
+                width="153"
+                height="186"
+                loading="lazy"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-[#4EB127] text-white text-xs font-bold px-4 py-1.5 rounded-full whitespace-nowrap shadow-md">
+              DVSA Approved ADI
+            </div>
+          </div>
+        </div>
+        <!-- Text -->
+        <div>
+          <span class="text-[#4EB127] font-bold text-sm uppercase tracking-widest">About Me</span>
+          <h2 class="text-3xl md:text-4xl font-display font-extrabold text-white mt-2 mb-4">Hi, I'm Darren</h2>
+          <p class="text-[#CAE8BE] leading-relaxed mb-4">
+            I'm a DVSA-approved driving instructor based in Harwich, Essex. I set up Pass With Darren because I believe everyone deserves a driving instructor who listens, adapts, and genuinely cares about your progress.
+          </p>
+          <p class="text-[#CAE8BE] leading-relaxed mb-6">
+            Whether you're a nervous first-timer or someone who just needs a few lessons to sharpen up before your test, I'll create a lesson plan that works for you. No pressure, no rushing, just steady progress at your pace.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-[#4EB127]/20 rounded-xl p-4 text-center">
+              <p class="text-[#4EB127] font-display font-extrabold text-2xl">ADI</p>
+              <p class="text-[#CAE8BE] text-xs mt-1">Registered Instructor</p>
+            </div>
+            <div class="bg-[#4EB127]/20 rounded-xl p-4 text-center">
+              <p class="text-[#4EB127] font-display font-extrabold text-2xl">📍</p>
+              <p class="text-[#CAE8BE] text-xs mt-1">Harwich Based</p>
+            </div>
+          </div>
+          <div class="mt-6 flex gap-4">
+            <a href={`tel:${phone}`} class="bg-[#4EB127] hover:bg-[#3E8E1F] text-white font-bold px-5 py-2.5 rounded-full text-sm transition-colors">Call Me</a>
+            <a href={facebook} target="_blank" rel="noopener noreferrer" class="border border-[#4EB127] text-[#4EB127] hover:bg-[#4EB127]/10 font-bold px-5 py-2.5 rounded-full text-sm transition-colors">Facebook Page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Areas covered -->
+  <section id="areas" class="py-20 bg-[#F6FBF4]">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <span class="text-[#4EB127] font-bold text-sm uppercase tracking-widest">Where I Teach</span>
+        <h2 class="text-3xl md:text-4xl font-display font-extrabold text-[#17350C] mt-2">Areas Covered</h2>
+        <p class="text-[#2F6A17] mt-3 max-w-xl mx-auto">I cover Harwich and the surrounding towns and villages. Not sure if I cover your area? Just give me a call and I'll let you know.</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 max-w-3xl mx-auto">
+        {[
+          "Harwich", "Dovercourt", "Ramsey", "Parkeston",
+          "Manningtree", "Mistley", "Lawford", "Colchester",
+          "Tendring", "Wix", "Bradfield", "Great Oakley",
+          "Little Oakley", "Beaumont", "Thorpe-le-Soken", "Frinton-on-Sea"
+        ].map(area => (
+          <div class="bg-white border border-[#CAE8BE] rounded-xl px-4 py-3 text-center shadow-sm hover:border-[#4EB127] hover:bg-[#E4F3DF] transition-colors">
+            <span class="text-[#17350C] font-semibold text-sm">📍 {area}</span>
+          </div>
+        ))}
+      </div>
+      <p class="text-center text-[#2F6A17] text-sm mt-8">
+        Not listed? <a href={`tel:${phone}`} class="text-[#4EB127] font-bold underline">Call {phoneDisplay}</a> to check availability in your area.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-20 bg-[#E4F3DF]">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <span class="text-[#4EB127] font-bold text-sm uppercase tracking-widest">Lesson Prices</span>
+        <h2 class="text-3xl md:text-4xl font-display font-extrabold text-[#17350C] mt-2">Transparent, Fair Pricing</h2>
+        <p class="text-[#2F6A17] mt-3 max-w-xl mx-auto">I offer competitive rates with no hidden extras. Contact me directly for my current prices and availability.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <!-- Standard hourly -->
+        <div class="bg-white rounded-2xl shadow-sm border border-[#CAE8BE] p-6 text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-3">🕐</div>
+          <h3 class="font-display font-extrabold text-[#17350C] text-lg mb-2">Hourly Lesson</h3>
+          <p class="text-[#2F6A17] text-sm mb-4">1-hour or 1.5-hour sessions. Great for steady, regular progress.</p>
+          <a href={`tel:${phone}`} class="inline-block bg-[#4EB127] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#3E8E1F] transition-colors">Ask for Price</a>
+        </div>
+        <!-- Block booking -->
+        <div class="bg-white rounded-2xl shadow-sm border border-[#4EB127] p-6 text-center relative hover:shadow-md transition-shadow">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#4EB127] text-white text-xs font-bold px-3 py-1 rounded-full">Best Value</div>
+          <div class="text-3xl mb-3">📦</div>
+          <h3 class="font-display font-extrabold text-[#17350C] text-lg mb-2">Block Booking</h3>
+          <p class="text-[#2F6A17] text-sm mb-4">Book 10 lessons upfront and save. Lock in your slot and your rate.</p>
+          <a href={`tel:${phone}`} class="inline-block bg-[#4EB127] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#3E8E1F] transition-colors">Ask for Price</a>
+        </div>
+        <!-- Intensive course -->
+        <div class="bg-white rounded-2xl shadow-sm border border-[#CAE8BE] p-6 text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-3">⚡</div>
+          <h3 class="font-display font-extrabold text-[#17350C] text-lg mb-2">Intensive Course</h3>
+          <p class="text-[#2F6A17] text-sm mb-4">Multiple hours per day over a short period. Pass in weeks, not months.</p>
+          <a href={`tel:${phone}`} class="inline-block bg-[#4EB127] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#3E8E1F] transition-colors">Ask for Price</a>
+        </div>
+        <!-- Pass Plus -->
+        <div class="bg-white rounded-2xl shadow-sm border border-[#CAE8BE] p-6 text-center hover:shadow-md transition-shadow">
+          <div class="text-3xl mb-3">🏅</div>
+          <h3 class="font-display font-extrabold text-[#17350C] text-lg mb-2">Pass Plus</h3>
+          <p class="text-[#2F6A17] text-sm mb-4">6-module post-test course. Can reduce your car insurance as a new driver.</p>
+          <a href={`tel:${phone}`} class="inline-block bg-[#4EB127] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#3E8E1F] transition-colors">Ask for Price</a>
+        </div>
+      </div>
+      <div class="text-center mt-8 bg-white border border-[#CAE8BE] rounded-2xl p-6 max-w-md mx-auto shadow-sm">
+        <p class="text-[#17350C] font-display font-extrabold text-lg mb-1">Ready to get started?</p>
+        <p class="text-[#2F6A17] text-sm mb-4">Call me to discuss your needs and get a quote. I'm happy to chat with no obligation.</p>
+        <a href={`tel:${phone}`} class="bg-[#17350C] text-white font-bold px-6 py-3 rounded-full inline-block hover:bg-[#0f2508] transition-colors">
+          📞 {phoneDisplay}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials placeholder -->
+  <section class="py-20 bg-[#F6FBF4]">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <span class="text-[#4EB127] font-bold text-sm uppercase tracking-widest">What Pupils Say</span>
+        <h2 class="text-3xl md:text-4xl font-display font-extrabold text-[#17350C] mt-2">Reviews Coming Soon</h2>
+        <p class="text-[#2F6A17] mt-3 max-w-xl mx-auto">I'm proud of every pupil who passes. Follow my Facebook page for updates and to see what people are saying.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl border border-[#CAE8BE] p-6 text-center shadow-sm">
+          <div class="text-4xl mb-3">⭐</div>
+          <p class="text-[#2F6A17] text-sm italic">"Reviews from my pupils will appear here soon. Check my Facebook page for the latest."</p>
+          <p class="text-[#4EB127] font-bold text-sm mt-3">— Pass With Darren</p>
+        </div>
+        <div class="bg-white rounded-2xl border border-[#CAE8BE] p-6 text-center shadow-sm flex flex-col items-center justify-center">
+          <div class="text-4xl mb-3">📱</div>
+          <p class="font-display font-extrabold text-[#17350C] mb-2">Follow on Facebook</p>
+          <a href={facebook} target="_blank" rel="noopener noreferrer" class="bg-[#1877F2] text-white text-sm font-bold px-4 py-2 rounded-full hover:opacity-90 transition-opacity">
+            PASSDAZ on Facebook
+          </a>
+        </div>
+        <div class="bg-white rounded-2xl border border-[#CAE8BE] p-6 text-center shadow-sm">
+          <div class="text-4xl mb-3">💬</div>
+          <p class="text-[#2F6A17] text-sm italic">"Got a question before booking? Just give me a call and I'll be happy to have a chat."</p>
+          <a href={`tel:${phone}`} class="text-[#4EB127] font-bold text-sm mt-3 block hover:underline">{phoneDisplay}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + Contact -->
+  <section id="contact" class="py-20 bg-[#17350C]">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <!-- Left: contact info -->
+        <div>
+          <span class="text-[#4EB127] font-bold text-sm uppercase tracking-widest">Get in Touch</span>
+          <h2 class="text-3xl md:text-4xl font-display font-extrabold text-white mt-2 mb-6">Ready to Start Your Journey?</h2>
+          <p class="text-[#CAE8BE] leading-relaxed mb-8">I'd love to hear from you. Whether you're ready to book your first lesson or just have a few questions, get in touch and I'll get back to you as soon as I can.</p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-[#4EB127]/20 flex items-center justify-center flex-shrink-0 text-lg">📞</div>
+              <div>
+                <p class="text-[#CAE8BE] text-xs uppercase tracking-wide">Phone</p>
+                <a href={`tel:${phone}`} class="text-white font-bold text-lg hover:text-[#4EB127] transition-colors">{phoneDisplay}</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-[#4EB127]/20 flex items-center justify-center flex-shrink-0 text-lg">📍</div>
+              <div>
+                <p class="text-[#CAE8BE] text-xs uppercase tracking-wide">Based in</p>
+                <p class="text-white font-bold">29 Arderne Cl, Harwich, Essex</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-[#4EB127]/20 flex items-center justify-center flex-shrink-0 text-lg">📘</div>
+              <div>
+                <p class="text-[#CAE8BE] text-xs uppercase tracking-wide">Facebook</p>
+                <a href={facebook} target="_blank" rel="noopener noreferrer" class="text-white font-bold hover:text-[#4EB127] transition-colors">facebook.com/PASSDAZ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: contact form -->
+        <div class="bg-white rounded-2xl p-6 shadow-xl">
+          <h3 class="font-display font-extrabold text-[#17350C] text-xl mb-4">Send Me a Message</h3>
+          <form action="https://formspree.io/f/mwvaaojq" method="POST" class="space-y-4">
+            <div>
+              <label for="name" class="block text-[#17350C] text-sm font-semibold mb-1">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your full name" class="w-full border border-[#CAE8BE] rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#4EB127] focus:ring-1 focus:ring-[#4EB127] bg-[#F6FBF4]" />
+            </div>
+            <div>
+              <label for="phone-field" class="block text-[#17350C] text-sm font-semibold mb-1">Phone Number</label>
+              <input type="tel" id="phone-field" name="phone" placeholder="Your phone number" class="w-full border border-[#CAE8BE] rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#4EB127] focus:ring-1 focus:ring-[#4EB127] bg-[#F6FBF4]" />
+            </div>
+            <div>
+              <label for="email-field" class="block text-[#17350C] text-sm font-semibold mb-1">Email Address</label>
+              <input type="email" id="email-field" name="email" placeholder="your@email.com" class="w-full border border-[#CAE8BE] rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#4EB127] focus:ring-1 focus:ring-[#4EB127] bg-[#F6FBF4]" />
+            </div>
+            <div>
+              <label for="lesson-type" class="block text-[#17350C] text-sm font-semibold mb-1">Lesson Type</label>
+              <select id="lesson-type" name="lesson_type" class="w-full border border-[#CAE8BE] rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#4EB127] focus:ring-1 focus:ring-[#4EB127] bg-[#F6FBF4]">
+                <option value="">Select a lesson type...</option>
+                <option value="beginner">Beginner Lessons</option>
+                <option value="refresher">Refresher Lessons</option>
+                <option value="intensive">Intensive Course</option>
+                <option value="pass-plus">Pass Plus</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-[#17350C] text-sm font-semibold mb-1">Message</label>
+              <textarea id="message" name="message" rows="3" placeholder="Tell me a bit about yourself and what you're looking for..." class="w-full border border-[#CAE8BE] rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#4EB127] focus:ring-1 focus:ring-[#4EB127] bg-[#F6FBF4] resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-[#4EB127] hover:bg-[#3E8E1F] text-white font-bold py-3 rounded-full transition-colors text-sm">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0f2508] text-[#CAE8BE] py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-[#4EB127] text-2xl font-bold font-display">✓</span>
+            <span class="font-display font-extrabold text-white text-lg">Pass With Darren</span>
+          </div>
+          <p class="text-sm leading-relaxed mb-4">DVSA-approved driving instructor based in Harwich, Essex. Patient, friendly lessons for all abilities.</p>
+          <div class="flex gap-3">
+            <a href={facebook} target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-[#1877F2] rounded-full flex items-center justify-center text-white text-xs font-bold hover:opacity-80 transition-opacity">f</a>
+          </div>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="font-display font-extrabold text-white mb-3">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href={`tel:${phone}`} class="hover:text-[#4EB127] transition-colors">📞 {phoneDisplay}</a></li>
+            <li><span>📍 29 Arderne Cl, Harwich, Essex</span></li>
+            <li><a href={facebook} target="_blank" rel="noopener noreferrer" class="hover:text-[#4EB127] transition-colors">📘 PASSDAZ on Facebook</a></li>
+          </ul>
+        </div>
+        <!-- Navigation -->
+        <div>
+          <h4 class="font-display font-extrabold text-white mb-3">Navigation</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/D1975" class="hover:text-[#4EB127] transition-colors">Home</a></li>
+            <li><a href="/D1975/#lessons" class="hover:text-[#4EB127] transition-colors">Lessons</a></li>
+            <li><a href="/D1975/#about" class="hover:text-[#4EB127] transition-colors">About Me</a></li>
+            <li><a href="/D1975/#areas" class="hover:text-[#4EB127] transition-colors">Areas Covered</a></li>
+            <li><a href="/D1975/#pricing" class="hover:text-[#4EB127] transition-colors">Pricing</a></li>
+            <li><a href="/D1975/#contact" class="hover:text-[#4EB127] transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-[#2F6A17] pt-6 flex flex-wrap justify-between items-center gap-4 text-xs text-[#2F6A17]">
+        <p>&copy; {new Date().getFullYear()} Pass With Darren. All rights reserved. DVSA Approved ADI. Harwich, Essex.</p>
+        <p>Website by <a href="https://biscuitweb.co.uk" class="hover:text-[#4EB127] transition-colors">Biscuit Web</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
